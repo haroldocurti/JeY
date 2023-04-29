@@ -94,7 +94,7 @@ const presentes2 = [
     checked: false,
     emailOrPhone: "",
     name: "",
-    productName: "Espremedor de limão",
+    productName: "Espremedor de limão1",
   },
 ];
 export default presentes2;

@@ -25,6 +25,7 @@ body {
   gap: 0.1rem;
   max-width: 500px;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -67,11 +68,17 @@ body {
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
-
+h2 {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 21px;
+}
 .list {
   columns: 4;
   margin: 0;
