@@ -1,4 +1,4 @@
-//import presentes from "./presentes.js";
+import presentes2 from "./presentes2.js";
 import firebaseConfig from "./db.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import {
@@ -59,5 +59,15 @@ enviarDadosbtn.addEventListener("click", async () => {
   await atualizaDB();
   addDBUpdateListener();
 });
-
-
+//inserir no banco de dados; Usado somente uma vez. (ou resetar o banco de dados)
+/* updateDBbtn.addEventListener("click", () => {
+  presentes2.forEach((presente) => {
+    addDoc(collection(db, "presentes"), {
+      name: presente.name,
+      emailOrPhone: "",
+      productName: presente.productName,
+      checked: false,
+    });
+  });
+});
+ */

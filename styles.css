@@ -79,7 +79,7 @@ body {
   margin-left: 1rem;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(2, auto);
   justify-content: start;
 }
 
