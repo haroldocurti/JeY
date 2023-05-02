@@ -14,7 +14,6 @@ import {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const listaDePresentes = document.querySelector("#list");
-const updateDBbtn = document.querySelector("#db-button");
 const enviarDadosbtn = document.getElementById("enviarDados");
 console.log(listaDePresentes);
 //ler do banco de dados (firestore) e atualizar a lista, apenas os presentes que não foram comprados
@@ -58,15 +57,3 @@ enviarDadosbtn.addEventListener("click", async () => {
   await atualizaDB();
   addDBUpdateListener();
 });
-//inserir no banco de dados; Usado somente uma vez. (ou resetar o banco de dados)
-/* updateDBbtn.addEventListener("click", () => {
-  presentes2.forEach((presente) => {
-    addDoc(collection(db, "presentes"), {
-      name: presente.name,
-      emailOrPhone: "",
-      productName: presente.productName,
-      checked: false,
-    });
-  });
-});
- */
