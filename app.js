@@ -54,6 +54,10 @@ function addDBUpdateListener() {
   });
 }
 enviarDadosbtn.addEventListener("click", async () => {
+  if (document.getElementById("personName").value === "") {
+    alert("Digite seu nome");
+    return;
+  }
   await atualizaDB();
   addDBUpdateListener();
 });
